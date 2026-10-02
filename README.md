@@ -69,7 +69,9 @@ Ghost b'a di **Windows balikɛcogo baara 16** ni **Azure lakanabaliya jɛɲɔgɔ
 ### Lakanabaliya Jateminɛ
 ```powershell
 # Ghost moduli dami
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # Sisan lakanabaliya yɔrɔ lajɛ
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### Sugandi 1: Jigin Nɔgɔya (Kɔrɔbɔli)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### Sugandi 2: Moduli Sigilikɛ
